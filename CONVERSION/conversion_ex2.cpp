@@ -24,5 +24,8 @@ int main()
 
 	int*    p1 = Alloc(10); // 임시객체.operator int*()
 	double* p2 = Alloc(10);
+	
+	delete[] p1;
+	delete[] p2;
 
 }
