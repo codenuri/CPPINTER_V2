@@ -23,7 +23,7 @@ void copy_type(T* dst, T* src, std::size_t sz)
 		while(sz--)
 		{
 			new(dst) T(*src);
-			--dst, --src;
+			++dst, ++src;
 		}	
 	}
 }
